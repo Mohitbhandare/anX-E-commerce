@@ -7,7 +7,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // handle login logic here
+    //TODO: handle login logic here
   };
 
   return (
@@ -17,8 +17,8 @@ function Login() {
         {/* login form */}
         <div className="itmes-2">
           <div className="heading">
-            <h1>Welcome</h1>
-            <p>Enter your email and password to access youe account</p>
+            <h1>Welcome Back</h1>
+            <p>Enter your email and password to access your account</p>
           </div>
           <div className="login-form">
             <form onSubmit={handleSubmit}>
@@ -32,7 +32,7 @@ function Login() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="flex-email-item-2">
+              <div className="flex-pass-item-2">
                 <label className="label-password">Password</label>
                 <input
                   className="input-password"

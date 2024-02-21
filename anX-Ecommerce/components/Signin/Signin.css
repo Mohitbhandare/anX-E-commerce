@@ -2,20 +2,16 @@ body {
   margin: 0px;
 }
 
-.container {
-  background-color: bisque;
-}
-
-.flex-container {
+.flex-container-sign {
   /* border: 2px black solid; */
   display: flex;
   height: 43rem;
 }
 
-.heading {
+.heading-for-sign {
   text-align: center;
   line-height: 0.5;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .itmes-1 {
@@ -36,13 +32,19 @@ body {
   width: 100%;
   height: auto;
   background-color: white;
-  padding-top: 9rem;
+  padding-top: 5rem;
 }
 
-.login-form {
+.signin-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.flex-email-item-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
 }
 
 input {
@@ -66,19 +68,11 @@ button {
   margin-top: 2rem;
 }
 
-.flex-email-item-1,
-.flex-pass-item-2 {
+.flex-name-item-1,
+.flex-mobile-item-2,
+.flex-email-item-3,
+.flex-pass-item-4 {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-}
-
-.forgot-pass {
-  font-size: 13px;
-  text-align: right;
-  margin-top: 5px;
-}
-
-.signup-link {
-  margin-top: 2rem;
 }
