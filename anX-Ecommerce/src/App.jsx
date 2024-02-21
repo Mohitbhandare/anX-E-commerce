@@ -1,11 +1,11 @@
 // import './App.css';
-import { Signin } from '../components/index';
+import { Header } from '../components/index';
 
 function App() {
   return (
     <>
       {/* <Login /> */}
-      <Signin />
+      <Header />
     </>
   );
 }

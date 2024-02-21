@@ -45,7 +45,8 @@ body {
   align-items: center;
 }
 
-input {
+.input-email,
+.input-password {
   outline: none;
   margin-top: 4px;
   border-color: transparent;
@@ -55,7 +56,7 @@ input {
   width: 20rem;
 }
 
-button {
+.btn-login {
   outline: none;
   width: 100%;
   background-color: black;

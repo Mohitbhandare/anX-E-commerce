@@ -47,7 +47,10 @@ body {
   margin-top: 3px;
 }
 
-input {
+.input-name,
+.input-mobile,
+.input-email,
+.input-password {
   outline: none;
   margin-top: 4px;
   border-color: transparent;
