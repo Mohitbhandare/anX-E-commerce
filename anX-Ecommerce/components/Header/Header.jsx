@@ -1,9 +1,14 @@
 import { useState } from 'react';
-import { CartLogo, SearchLogo } from '../index.js';
+import { CartLogo, SearchLogo, SearchPopup } from '../index.js';
 import './Header.css';
 
 function Header() {
-  const [search, setSearch] = useState('');
+  // const [search, setSearch] = useState('');
+  const [popup, setPopup] = useState('');
+
+  const handleClick = () => {
+    setPopup(true);
+  };
 
   return (
     <nav className="nav-container">
@@ -11,9 +16,7 @@ function Header() {
         <h1>anX</h1>
       </div>
       <div className="middle-items-2">
-        <div className="home-items-1">Home</div>
-        <div className="category-items-2">Category</div>
-        <div className="search-bar-3">
+        {/* <div className="search-bar-3">
           <input
             className="search-input"
             type="search"
@@ -21,11 +24,16 @@ function Header() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
       <div className="end-items-3">
+        <div className="home-items-1">Home</div>
+        <div className="category-items-2">
+          <button className="btn-category">Category</button>
+        </div>
         <div className="search-items-4">
-          <SearchLogo />
+          <SearchLogo onClick={handleClick} />
+          <SearchPopup trigger={popup}></SearchPopup>
         </div>
         <div className="cart-items-1">
           <CartLogo />
