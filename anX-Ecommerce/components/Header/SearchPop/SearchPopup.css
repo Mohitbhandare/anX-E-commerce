@@ -1,0 +1,45 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inner-popup {
+  position: relative;
+  margin-top: 9rem;
+  padding: 32px;
+  width: 100%;
+  height: 5rem;
+  max-width: 640px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: white;
+}
+
+.search-input {
+  outline: none;
+  /* border: none; */
+  width: 90%;
+  height: 2rem;
+}
+
+.search-data {
+  color: rgba(117, 114, 114, 0.62);
+  font-size: smaller;
+  text-align: center;
+  margin-top: 2rem;
+}
